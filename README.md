@@ -1,30 +1,27 @@
-在这里写一个工具，主要是给自己看源码用。
+一个 bfs 递归找到文件/文件夹所有依赖，所有依赖的依赖的 nodejs 工具，产出 2 个 json 数组，一个是所有业务代码，一个是用到的 node_modules 包。
+
+在 JS-structrue 基础上改的。去掉了生成图像，增加了递归、找外层包、resovle webpack alias, 找 node_modules 等功能。
 
 ## 使用方式
+
+git clone 到本地，yarn link 它和待分析的代码。在待分析的代码文件的 package.json 中加个指令，如 `list": "cd src/your-pages-want-to-be-analyzed && find-dep`。执行指令即可。
+或者把 bin/index.js 改为手动传入 root (要分析的文件夹)。
+
+还没发包，发了可以这么做：
 全局安装：
+
 ```
-npm install js-analysis -g
+npm install find-js-dependencies -g
 ```
 
 然后进入需要分析的文件夹，执行
+
 ```
-analysis
+find-dep
 ```
-
-## 生成之后的样子
-
-生成之后的图片样子：
-![all-js-analysis](http://laihuamin.oss-cn-beijing.aliyuncs.com/all-js-analysis.png)
-![one-analysis](http://laihuamin.oss-cn-beijing.aliyuncs.com/one-analysis.png)
-
-## 大致的编写流程
-
-1.了解npm包的书写规则 <br>
-2.利用fs模块读取文件夹中的文件，判断是否是文件夹，采取是否递归，最后获得filename和pathname。<br>
-3.我们利用pathname组成echart的nodes节点<br>
-4.利用fs模块读取每个文件的内容，利用正则筛选出引入的文件，最后的links结果进行去重<br>
-5.将links中的target属性进行规范化，最后输出<br>
-6.合成模版。
 
 ## 备注
-如果大家喜欢，就给个star吧，谢谢
+
+自用小工具，代码待整理。待添加 catch error。
+
+待添加 test。

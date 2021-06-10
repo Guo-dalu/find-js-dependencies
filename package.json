@@ -1,31 +1,31 @@
 {
-  "name": "js-analysis",
-  "version": "0.2.0",
-  "description": "this is a npm package to analysis js structure",
+  "name": "find-js-dependencies",
+  "version": "1.0.0",
+  "description": "this is a nodejs tool to find js dependencies for a directory or a file recursively",
   "bin": {
-    "analysis": "bin/index.js --max-old-space-size=8192"
+    "find-dep": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "js-dependency",
     "js-analysis",
-    "structure",
-    "js代码结构分析"
+    "依赖分析"
   ],
-  "author": "laihuamin",
+  "author": "xmg",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/laihuamin/JS-structure"
-  },
-  "dependencies": {
-    "open": "0.0.5"
+    "url": "https://github.com/Guo-dalu/find-js-dependencies"
   },
   "bugs": {
-    "url": "https://github.com/laihuamin/JS-structure/issues"
+    "url": "https://github.com/Guo-dalu/find-js-dependencies/issues"
   },
   "devDependencies": {
     "colors": "^1.4.0"
+  },
+  "dependencies": {
+    "ramda": "^0.27.1"
   }
 }
