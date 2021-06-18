@@ -17,15 +17,21 @@ const root = process.cwd()
 // )
 
 // getResult(
-//   "/Users/xuemengge/zhihu/heifetz/scripts",
+//   "/Users/xuemengge/zhihu/heifetz/src/server.js",
 //   [],
-//   "/Users/xuemengge/playground/find-js-dependencies/scripts.json"
+//   "/Users/xuemengge/playground/find-js-dependencies/server.json"
 // )
 
-getResult(
-  "/Users/xuemengge/zhihu/heifetz/src/components/Error/ErrorPage/index.js",
-  [],
-  "/Users/xuemengge/playground/find-js-dependencies/errorpage.json"
-)
+// getResult(
+//   "/Users/xuemengge/zhihu/heifetz/src/components/Error/ErrorPage/index.js",
+//   [],
+//   "/Users/xuemengge/playground/find-js-dependencies/errorpage1.json"
+// )
 
-//findExactFile("/Users/xuemengge/zhihu/heifetz/src/helper/analytics")
+// getResult(
+//   "/Users/xuemengge/zhihu/heifetz/src/routes/index.js",
+//   [],
+//   "/Users/xuemengge/playground/find-js-dependencies/r.json"
+// )
+
+findExactFile("/Users/xuemengge/zhihu/heifetz/src/routes/routes")
