@@ -1,0 +1,16 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "quotes": ["error", "single"]
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "globalThis": false
+  }
+}

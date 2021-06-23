@@ -24,7 +24,9 @@
     "url": "https://github.com/Guo-dalu/find-js-dependencies/issues"
   },
   "devDependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "eslint": "^7.29.0",
+    "execa": "^1.0.0"
   },
   "dependencies": {
     "ramda": "^0.27.1"
