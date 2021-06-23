@@ -22,6 +22,12 @@ const root = process.cwd()
 //   "/Users/xuemengge/playground/find-js-dependencies/server.json"
 // )
 
+getResult(
+  "/Users/xuemengge/zhihu/heifetz/src/apps/sem",
+  [],
+  "/Users/xuemengge/playground/find-js-dependencies/sem.json"
+)
+
 // getResult(
 //   "/Users/xuemengge/zhihu/heifetz/src/components/Error/ErrorPage/index.js",
 //   [],
@@ -34,4 +40,10 @@ const root = process.cwd()
 //   "/Users/xuemengge/playground/find-js-dependencies/r.json"
 // )
 
-findExactFile("/Users/xuemengge/zhihu/heifetz/src/routes/routes")
+// getResult(
+//   "/Users/xuemengge/zhihu/heifetz/src/components/AppHeader/MessagesLoader.js",
+//   [],
+//   "/Users/xuemengge/playground/find-js-dependencies/ml.json"
+// )
+
+//findExactFile("/Users/xuemengge/zhihu/heifetz/src/routes/routes")
