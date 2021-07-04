@@ -1,5 +1,5 @@
 const filterRepo = require('../lib/index')
 
-const targetPath = '/Users/xuemengge/zhihu/clone3'
+const targetPath = '/Users/your-path/your-pkg'
 
-filterRepo(targetPath, 'src/apps/sem')
+filterRepo(targetPath, 'src/pages/your-page')
