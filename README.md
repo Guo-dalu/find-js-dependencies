@@ -1,3 +1,7 @@
+Finding all dependencies including js, css or static resources of a js file/folder using BFS by this single nodejs tool. It would produce 2 json arrays, one is the business code, and the other is the names from node_modules.
+
+It would deal with dynamic import and webpack alias situations as well.
+
 一个 bfs 递归找到文件/文件夹所有依赖，所有依赖的依赖的 nodejs 工具，产出 2 个 json 数组，一个是所有业务代码，一个是用到的 node_modules 包。
 
 在 JS-structrue 基础上改的。去掉了生成图像，增加了递归、找外层包、resovle webpack alias, 找 node_modules 等功能。
